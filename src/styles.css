@@ -1,0 +1,300 @@
+/* 
+resetCSS------------ */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* 
+body {
+  line-height: 1;
+} */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+/* 
+resetCSS------------ //end */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+.App {
+  /* フォントを設定する */
+  /* font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; */
+  text-align: center;
+}
+
+/* Footer波のスタイル
+ーーーーーーーーーーーーーーーー*/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  /* height: 200px; */
+  height: 425px;
+  /* width: 200px; */
+  width: 400px;
+  /* background-color: burlywood; */
+}
+
+.wave1 {
+  position: absolute;
+  /* height: 400px; */
+  height: 850px;
+  /* width: 800px; */
+  width: 1200px;
+  background-color: #e0e0e0;
+  z-index: 3;
+}
+
+.wave2 {
+  position: absolute;
+  /* height: 400px; */
+  height: 850px;
+  /* width: 800px; */
+  width: 1200px;
+  background-color: #ccc;
+  z-index: 5;
+}
+
+.wave3 {
+  position: absolute;
+  /* height: 400px; */
+  height: 850px;
+  /* width: 800px; */
+  width: 1200px;
+  background-color: #a7a7a7;
+  z-index: 6;
+}
+
+.wavy1 {
+  animation-name: wavy; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 30s; /*3で解説*/
+  animation-iteration-count: infinite; /*4で解説*/
+  /* animation-timing-function: ease; */
+  /* animation-delay: 0.5s; 6で解説 */
+  animation-direction: normal; /*7で解説*/
+  animation-direction: alternate-reverse;
+}
+
+.wavy2 {
+  animation-name: wavy; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 15s; /*3で解説*/
+  animation-iteration-count: infinite; /*4で解説*/
+  /* animation-timing-function: ease; */
+  /* animation-delay: 0.5s; 6で解説 */
+  animation-direction: normal; /*7で解説*/
+  animation-direction: alternate-reverse;
+}
+
+.wavy3 {
+  animation-name: wavy; /*1で解説*/
+  animation-fill-mode: backwards; /*2で解説*/
+  animation-duration: 18s; /*3で解説*/
+  animation-iteration-count: infinite; /*4で解説*/
+  /* animation-timing-function: ease; */
+  /* animation-delay: 0.5s; 6で解説 */
+  animation-direction: normal; /*7で解説*/
+  animation-direction: alternate-reverse;
+}
+
+/* 一旦停止 */
+/*1で解説*/
+@keyframes wavy {
+  0% {
+    transform: rotate(-10deg);
+    /* top: 40px; */
+    top: 160px;
+    left: 10px;
+  }
+
+  100% {
+    transform: rotate(10deg);
+    /* top: 60px; */
+    top: 120px;
+    left: -150px;
+  }
+}
+
+/* Footer波スタイル以上
+ーーーーーーーーーーーーーー */
+
+/* ここにはスタイル書かない。インラインでお願いします */
+
+/* Slowコンポーネント　キーフレーム */
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
